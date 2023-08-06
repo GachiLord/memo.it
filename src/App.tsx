@@ -1,4 +1,3 @@
-import './assets/app.css'
 import Editor from './components/Editor'
 import Options from './components/Options'
 

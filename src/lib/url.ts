@@ -3,5 +3,9 @@ export function getURL(text: string){
 }
 
 export function getText(url: string){
-    return url.split('/').at(-1)
+    const memo = url.split('/').at(-1)
+
+    if (memo === "#" || memo === undefined) return ""
+
+    return memo
 }

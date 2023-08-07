@@ -17,6 +17,6 @@ export function decompress(text: string){
         return pako.inflate(buffer, { to: 'string' })
     }
     catch{
-        return ""
+        return text
     }
 }

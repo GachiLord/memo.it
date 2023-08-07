@@ -9,11 +9,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "crypto-js": "^4.1.1",
+    "eventemitter3": "^5.0.1",
     "js-base64": "^3.7.5",
     "pako": "^2.1.0",
     "solid-js": "^1.7.8"
   },
   "devDependencies": {
+    "@types/crypto-js": "^4.1.1",
     "@types/pako": "^2.0.0",
     "typescript": "^5.0.2",
     "vite": "^4.4.5",

@@ -8,7 +8,7 @@ export interface IAppEventMap{
 export interface IAppEventEmitter{
     on<E extends keyof IAppEventMap>(type: E, listener: IAppEventMap[E]): void;
     once<E extends keyof IAppEventMap>(type: E, listener: IAppEventMap[E]): void;
-    emit<E extends keyof IAppEventMap>(type: E, ...params: any[]): void;
+    emit<E extends keyof IAppEventMap>(type: E, ...params: unknown[]): void;
 }
 
 class AppEventEmitter extends EventEmitter implements IAppEventEmitter{}
